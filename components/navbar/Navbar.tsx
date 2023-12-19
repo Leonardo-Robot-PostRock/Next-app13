@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const Navbar = async () => {
 
 	return (
@@ -6,15 +8,15 @@ export const Navbar = async () => {
 
 			<div className='flex flex-1'></div>
 
-			<a className='mr-2' href='/about'>
+			<Link className='mr-2' href='/about'>
 				About
-			</a>
-			<a className='mr-2' href='/pricing'>
+			</Link>
+			<Link className='mr-2' href='/pricing'>
 				Pricing
-			</a>
-			<a className='mr-2' href='/contact'>
+			</Link>
+			<Link className='mr-2' href='/contact'>
 				Contact
-			</a>
+			</Link>
 		</nav>
 	);
 };
